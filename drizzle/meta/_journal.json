@@ -1,0 +1,34 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1722178768445,
+      "tag": "0000_far_sway",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1722186679917,
+      "tag": "0001_true_captain_britain",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1722382698627,
+      "tag": "0002_bored_bullseye",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1722400195248,
+      "tag": "0003_jazzy_retro_girl",
+      "breakpoints": true
+    }
+  ]
+}
