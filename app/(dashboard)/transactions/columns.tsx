@@ -9,7 +9,7 @@ import { Actions } from "./actions";
 import { InferResponseType } from "hono";
 import { client } from "@/lib/hono";
 import { format } from "date-fns";
-import { formatCurrency } from "@/lib/utils";
+import { convertAmountToMiliunits, formatCurrency } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { AccountColumn } from "./account-column";
 import { CategoryColumn } from "./category-column";
@@ -120,7 +120,7 @@ export const columns: ColumnDef<ResponseType>[] = [
         variant={amount<0 ? 'destructive':'primary'}
         className="text-xs font-medium px-3.5 py-2.5"
         >
-          {formatCurrency(amount)}
+          {formatCurrency(convertAmountToMiliunits(amount))}
         </Badge>
       )
     }

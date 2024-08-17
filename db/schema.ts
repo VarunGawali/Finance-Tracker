@@ -39,6 +39,7 @@ export const transactions = pgTable("transactions", {
         onDelete: 'set null',
     }),
 })
+
 export const transactionsRelations = relations(transactions, ({one})=>({
     accounts: one(accounts, {
         fields: [transactions.accountId],

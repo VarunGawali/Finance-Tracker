@@ -6,7 +6,7 @@ import {migrate} from 'drizzle-orm/neon-http/migrator'
 config({path: ".env"})
 
 const sql = neon(process.env.DATABASE_URL!)
-const db = drizzle(sql)
+const db = drizzle(sql as any)
 
 const main = async()=>{
     try{
